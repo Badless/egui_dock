@@ -770,7 +770,6 @@ impl<'tree, Tab> DockArea<'tree, Tab> {
             ui.ctx().check_for_id_clash(id, body_rect, "a tab with id");
             let ui = &mut Ui::new(
                 ui.ctx().clone(),
-                ui.layer_id(),
                 id,
                 UiBuilder::new().max_rect(body_rect),
             );
